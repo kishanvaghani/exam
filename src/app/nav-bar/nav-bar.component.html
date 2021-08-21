@@ -8,12 +8,13 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <div style="height: 100vh">
-      <mat-toolbar color="primary">
-        <button  mat-icon-button 
-                     aria-label="Menu"
-                     (click)="sidenav.open()">
-        <mat-icon>menu</mat-icon>
-        </button>  
+      <mat-toolbar color="primary" class="tool-bar">
+        <button mat-icon-button aria-label="Menu" (click)="sidenav.open()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Logout" (click)="logout()">
+          <mat-icon>exit_to_app</mat-icon>
+        </button>
       </mat-toolbar>
       <router-outlet></router-outlet>
     </div>

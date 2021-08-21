@@ -11,6 +11,7 @@ import { DemoMaterialModule } from './material-module';
 import { RouterModule } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AboutComponent } from './dashboard/about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SignUpComponent,
     NavBarComponent,
     DashboardComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
