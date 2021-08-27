@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './dashboard/about/about.component';
+import { FancyLoginComponent } from './fancy-login/fancy-login.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AboutComponent } from './dashboard/about/about.component';
     NavBarComponent,
     DashboardComponent,
     AboutComponent,
+    FancyLoginComponent,
   ],
   imports: [
     BrowserModule,
