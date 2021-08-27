@@ -42,4 +42,11 @@ export class AboutComponent implements OnInit {
    this.dataSource.data = this.dataSource.data.filter((e, i) => e.id !== id);
   }
 
+  applyFilter(filterValue) {
+    this.dataSource.filter = filterValue.target.value.trim().toLowerCase();
+    console.log(this.dataSource.filter);
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
 }
