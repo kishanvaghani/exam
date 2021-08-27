@@ -1,15 +1,16 @@
 <div class="login-section">
   <div class="login-form">
-    <form>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
       <h1>Login</h1>
       <div class="content">
         <div class="input-field">
-          <input type="email" placeholder="Email" autocomplete="nope" />
+          <input type="email" placeholder="Email" formControlName='email' autocomplete="nope" />
         </div>
         <div class="input-field">
           <input
             type="password"
             placeholder="Password"
+            formControlName='password'
             autocomplete="new-password"
           />
         </div>
