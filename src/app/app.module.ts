@@ -32,7 +32,7 @@ import { FancyLoginComponent } from './fancy-login/fancy-login.component';
     FormsModule,
     HttpClientModule,
     RouterModule,
-    DemoMaterialModule
+    DemoMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
